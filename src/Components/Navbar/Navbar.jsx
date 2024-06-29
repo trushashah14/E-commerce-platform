@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
@@ -15,10 +16,10 @@ const Navbar = () => {
                 <p>SHOPPER</p>
             </div>
             <ul className="nav-menu">
-            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none' }} to='/'>Shop</Link>{menu==="Shop"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("mens Clothing")}}><Link style={{ textDecoration: 'none' }} to='/Mens Clothing'></Link>{menu==="Men's Clothing"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("womens Clothing")}}><Link style={{ textDecoration: 'none' }} to='/Womens Clothing'></Link>{menu==="Women's Clothing"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("kids Fashion")}}><Link style={{ textDecoration: 'none' }} to='/Kids Clothing'></Link>{menu==="Kid's Fashion"?<hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none' }} to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("mens")}}><Link style={{ textDecoration: 'none' }} to='/Men'>Men</Link>{menu==="mens"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("womens")}}><Link style={{ textDecoration: 'none' }} to='/Women'>Women</Link>{menu==="womens"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("kids")}}><Link style={{ textDecoration: 'none' }} to='/Kids'>Kids</Link>{menu==="kids "?<hr/>:<></>}</li>
             </ul>
             <div className="nav-login-cart">
                 <Link to='/login'><button>Login</button></Link>

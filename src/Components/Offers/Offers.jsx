@@ -9,10 +9,11 @@ const Offers = () => {
                 <h1>Offers For You</h1>
                 <p>ONLY ON BEST SELLERS PRODUCT</p>
                 <button>Check Now</button>
-                <div className="offers-right">
+
+            </div>
+            <div className="offers-right">
                     <img src={exclusive_image} alt="" />
                 </div>
-            </div>
         </div>
     )
 }
